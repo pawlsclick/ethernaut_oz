@@ -195,7 +195,7 @@ export const CUSTOM_LOGGING = true; /* TRUE on production */
 export const SHOW_ALL_COMPLETE_DESCRIPTIONS = false; /* FALSE on production */
 export const SHOW_VERSION = true;
 
-// export const ACTIVE_NETWORK = NETWORKS.SEPOLIA
+export const ACTIVE_NETWORK = NETWORKS.SEPOLIA
 // export const ACTIVE_NETWORK = NETWORKS.OPTIMISM_SEPOLIA
 // export const ACTIVE_NETWORK = NETWORKS.ARBITRUM_SEPOLIA
 // export const ACTIVE_NETWORK = NETWORKS.HOLESKY

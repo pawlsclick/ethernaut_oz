@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    command: bash -c "cd client && yarn install && yarn start"
+
+  ganache:
+    image: trufflesuite/ganache-cli:latest
+    ports:
+      - "8545:8545"
+    command: ganache-cli -p 8545 -h 0.0.0.0 -a 10 -e 1000 --mnemonic "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"
+
