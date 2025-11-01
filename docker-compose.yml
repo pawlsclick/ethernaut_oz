@@ -7,6 +7,8 @@ services:
       - "3000:3000"
     volumes:
       - .:/app
+    environment:
+      - NODE_OPTIONS=--openssl-legacy-provider  
     command: bash -c "cd client && yarn install && yarn start"
 
   ganache:
